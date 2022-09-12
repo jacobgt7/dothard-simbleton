@@ -142,3 +142,6 @@ const database = {
         }
     ]
 }
+
+//a function to export a copy of the businesses array.
+export const getBusinesses = () => database.businesses.map((business) => ({ ...business }))
